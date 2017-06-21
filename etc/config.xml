@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Meta Tags Extension for Magento 2
+ *
+ * @author     Volodymyr Konstanchuk http://konstanchuk.com
+ * @copyright  Copyright (c) 2017 The authors
+ * @license    http://www.opensource.org/licenses/mit-license.html  MIT License
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <catalog>
+            <konstanchuk_metatags_product>
+                <active>1</active>
+                <replace_type>1</replace_type>
+                <title><![CDATA[{{uppercase:name}} - buy ${{function:getFinalPrice}}]]></title>
+                <keywords><![CDATA[{{name}}, {{sku}}]]></keywords>
+                <description><![CDATA[{{description}}]]></description>
+            </konstanchuk_metatags_product>
+            <konstanchuk_metatags_category>
+                <active>1</active>
+                <replace_type>1</replace_type>
+                <title><![CDATA[{{name}} | Magento Store]]></title>
+                <keywords />
+                <description><![CDATA[{{description}}]]></description>
+            </konstanchuk_metatags_category>
+        </catalog>
+    </default>
+</config>
